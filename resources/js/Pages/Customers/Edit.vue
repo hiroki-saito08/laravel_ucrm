@@ -18,7 +18,6 @@ const form = reactive({
 })
 
 const updateCustomer = id => {
-  console.log("ここきてる？")
   Inertia.put(route('customers.update',  { customer: id }), form)
 }
 
